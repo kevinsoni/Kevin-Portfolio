@@ -10,7 +10,10 @@
 	<meta property="og:title" content="Kevin's Portfolio - Frontend Developer" />
 	<meta property="og:description"
 		content="Skilled frontend developer specializing in web design, HTML, CSS, JavaScript, and more." />
+	<!-- Multiple OG Images with Different Sizes -->
 	<meta property="og:image" content="https://kevinsoni.github.io/Kevin-Portfolio/images/bg_1.png" />
+	<meta property="og:image" content="https://kevinsoni.github.io/Kevin-Portfolio/images/bg_2.png" />
+	<meta property="og:image" content="https://kevinsoni.github.io/Kevin-Portfolio/images/bg_3.png" />
 	<meta property="og:url" content="https://kevinsoni.github.io/Kevin-Portfolio" />
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -567,33 +570,37 @@
 				</div>
 			</div>
 
-			<!-- <div class="row no-gutters block-9">
-				<div class="col-md-6 order-md-last d-flex">
-					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+			<div class="row no-gutters block-9">
+				<div class="col-md-8 order-md-last d-flex">
+					<form action="https://formspree.io/f/xeoopgkd" method="POST"
+						class="bg-dark p-4 p-md-5 contact-form text-light">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Name">
+							<input type="text" name="name" class="form-control bg-secondary text-white"
+								placeholder="Your Name" required>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Email">
+							<input type="email" name="email" class="form-control bg-secondary text-white"
+								placeholder="Your Email" required>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Subject">
+							<input type="text" name="subject" class="form-control bg-secondary text-white"
+								placeholder="Subject" required>
 						</div>
 						<div class="form-group">
-							<textarea name="" id="" cols="30" rows="7" class="form-control"
-								placeholder="Message"></textarea>
+							<textarea name="message" class="form-control bg-secondary text-white" placeholder="Message"
+								rows="7" required></textarea>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
 						</div>
 					</form>
-
 				</div>
 
-				<div class="col-md-6 d-flex">
-					<div class="img" style="background-image: url(images/about.jpg);"></div>
+				<div class="col-md-4 d-flex">
+					<div class="img" style="background-image: url(images/bg_3.png);"></div>
 				</div>
-			</div> -->
+			</div>
+
 		</div>
 	</section>
 
