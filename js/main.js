@@ -275,3 +275,29 @@
 
 })(jQuery);
 
+$(document).ready(function () {
+    $('.nav-link-close').on('click', function () {
+        const navbarCollapse = $('.navbar-collapse');
+        if (navbarCollapse.hasClass('show')) {
+            // Animate closing
+            navbarCollapse.slideUp(300, function () {
+                navbarCollapse.removeClass('show').css('display', '');
+            });
+        }
+    });
+
+    $('.navbar-toggler').on('click', function () {
+        const navbarCollapse = $('.navbar-collapse');
+        if (!navbarCollapse.hasClass('show')) {
+            // Animate opening
+            navbarCollapse.slideDown(300, function () {
+                navbarCollapse.addClass('show').css('display', '');
+            });
+        } else {
+            // Animate closing when toggler is clicked
+            navbarCollapse.slideUp(300, function () {
+                navbarCollapse.removeClass('show').css('display', '');
+            });
+        }
+    });
+});
